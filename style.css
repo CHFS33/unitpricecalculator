@@ -1,0 +1,13 @@
+.calculator {
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.product {
+  margin: 5px;
+}
+.store {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
