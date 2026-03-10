@@ -9,27 +9,29 @@
   <body>
     <h1>Unit Price Comparison Calculator</h1>
     <div class="calculator">
-      <div class="product">
-        Product
-        <div class="store" id="store1">
-          Store 1
-          <div class="price" id="price1">Price 1</div>
-          <div class="unit" id="unit1">Unit 1</div>
-          <div class="unit-price" id="unit-price1">Unit Price 1</div>
-        </div>
-        <div class="store" id="store2">
-          Store 2
-          <div class="price" id="price2">Price 2</div>
-          <div class="unit" id="unit2">Unit 2</div>
-          <div class="unit-price2" id="unit-price2">Unit Price 2</div>
-        </div>
-        <div class="store" id="store3">
-          Store 3
-          <div class="price" id="price3">Price 3</div>
-          <div class="unit" id="unit3">Unit 3</div>
-          <div class="unit-price3" id="unit-price3">Unit Price 3</div>
-        </div>
+      <input type="text" class="product" placeholder="Product"> </input>
+      <div class="comparison">
+      <div class="stores">           
+      <input type="text" class="store" id="store1" placeholder="Store"></input>
+      <input type="text" class="store" id="store2" placeholder="Store"></input>
+      <input type="text" class="store" id="store3" placeholder="Store"></input>
       </div>
-    </div>
+      <div class="prices">
+      <input type="number" class="price" id="price1" placeholder="Price"></input>
+      <input type="number" class="price" id="price2" placeholder="Price"></input>
+      <input type="number" class="price" id="price3" placeholder="Price"></input>
+      </div>
+       <div class="units">
+      <input type="number" class="unit" id="unit1" placeholder="Unit"></input>
+      <input type="number" class="unit" id="unit2" placeholder="Unit"></input>
+      <input type="number" class="unit" id="unit3" placeholder="Unit"></input>
+      </div> 
+      <div class="unit-prices">
+      <div class="unit-price" id="unit-price1">$ per unit</div>
+      <div class="unit-price" id="unit-price2">$ per unit</div>
+      <div class="unit-price" id="unit-price3">$ per unit</div>
+      </div>
+      </div>  
+        </div>
   </body>
 </html>

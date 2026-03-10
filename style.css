@@ -1,13 +1,30 @@
 .calculator {
+  display: flex;
+  flex-direction: row;
+
   border: 1px solid black;
   border-radius: 8px;
 }
-
+.comparison {
+  display: flex;
+  justify-content: space-around;
+}
 .product {
   margin: 5px;
 }
-.store {
+.stores {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+}
+.prices {
+  display: flex;
+  flex-direction: column;
+}
+.units {
+  display: flex;
+  flex-direction: column;
+}
+.unit-prices {
+  display: flex;
+  flex-direction: column;
 }
