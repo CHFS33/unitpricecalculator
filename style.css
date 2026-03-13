@@ -7,24 +7,13 @@
 }
 .comparison {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  align-items: space-between;
 }
 .product {
   margin: 5px;
 }
-.stores {
-  display: flex;
-  flex-direction: column;
-}
-.prices {
-  display: flex;
-  flex-direction: column;
-}
-.units {
-  display: flex;
-  flex-direction: column;
-}
-.unit-prices {
+.calculations {
   display: flex;
   flex-direction: column;
 }
