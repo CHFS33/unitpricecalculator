@@ -1,8 +1,14 @@
+body {
+  background-color: black;
+  color: orange;
+}
+
 .calculator {
   display: flex;
   flex-direction: row;
+  width: 748px;
 
-  border: 1px solid black;
+  border: 1px solid orange;
   border-radius: 8px;
 }
 .comparison {
@@ -16,4 +22,53 @@
 .calculations {
   display: flex;
   flex-direction: column;
+}
+input {
+  background-color: black; /* Light grayish-blue */
+  border: 1px solid orange;
+  color: orange; /* The color of the text you type */
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* Change color when the user clicks inside the box */
+input:focus {
+  background-color: black;
+  border-color: orange;
+  outline: none; /* Removes the default blue glow */
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+/* This only triggers on phones */
+@media screen and (max-width: 600px) {
+  .comparison {
+    flex-direction: column; /* Stack stores on top of each other */
+    align-items: center;
+    gap: 20px;
+  }
+
+  .calculations {
+    width: 90%; /* Make cards wide so they're easy to tap */
+    padding: 20px;
+  }
+
+  input {
+    font-size: 16px; /* Prevents iOS from zooming in when you tap an input */
+    padding: 12px; /* Bigger touch targets for thumbs */
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+/* Touch-friendly styling for all screens */
+.calculations {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Makes it look "tappable" */
+  transition: transform 0.2s ease;
+}
+
+.calculations:active {
+  transform: scale(0.98); /* Squishes slightly when you press it */
 }
