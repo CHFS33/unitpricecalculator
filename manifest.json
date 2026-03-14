@@ -3,12 +3,12 @@
   "name": "Unit Price Truth Tool",
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "./Images/priceCalculator192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "icon-512.png",
+      "src": "./Images/priceCalculator512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
