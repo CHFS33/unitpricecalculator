@@ -1,3 +1,9 @@
+//for PWA version
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("./sw.js")
+    .then(() => console.log("Service Worker Registered"));
+}
 //Select the main container which is the .calculator in css
 const calculator = document.querySelector(".calculator");
 //Now im listening for the input event
@@ -8,7 +14,7 @@ calculator.addEventListener("input", () => {
   calculateAll();
 });
 function calculateAll() {
-  //using a loop so we dont create a calculation for each store
+  //using a loop so we don't create a calculation for each store
   for (let i = 1; i <= 3; i++) {
     const priceInput = document.getElementById(`price${i}`);
     const unitInput = document.getElementById(`unit${i}`);
